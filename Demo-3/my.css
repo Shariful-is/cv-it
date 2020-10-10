@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+	scroll-behavior:smooth;
+}
+*{margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+span{color:red;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/*************header parts start ************/
+.container{
+	max-width:1170px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+.row{
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.header{
+	width:100%;
+	height:100vh;
+	background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('img/team-teamwork-together-ss-1920_b1tngv.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+    clip-path: polygon(100% 0%,100% 71%, 0% 100%, 0 75%, 0 0);
+	position:relative;
+    z-index:1;
+
+}
+.header:before{
+	content:"";
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0;
+	right:0;
+	opacity:.3;
+	z-index:-1;
+}
+.nav-item a{
+	color:#fff!important;
+	font-weight:bold;
+}
+.small-container{
+	max-width:1080px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+.title-phone{
+	margin-top:45px;
+}
+.title-phone p{
+	color:#fff;
+}
+.title-phone h1{
+	color:#fff;
+	font-size: 65px;
+	font-weight: 600;
+}
+h1.Change-hobe {
+    font-weight: 300;
+}
+.title-phone h2{
+	color:#fff;
+	font-size:25px;
+}
+.phone-call{text-align:center;
+    border: 1px solid #fff;
+    padding: 15px 0;
+	margin-top:50px;
+}
+.size-choto{font-size:12px}
+/*-------------------Company Business CSS------------------*/
+.company-div{
+	width:100%;
+	height:200px;
+	/*clip-path: polygon(100% 0%,100% 71%, 0% 100%, 0 75%, 0 0);
+    position:relative;
+    z-index:1;*/
+}
+.company-div:before{
+   /* content:"";
+	position:absolute;
+	top:0%;
+	bottom:0%;
+	left:0;
+	right:0;
+	opacity:.3;
+	z-index:-1;*/
+}
+
+.same-text {
+    text-align: center;
+}
+.same-text  h3 {
+	text-align:center;
+	margin:0 auto 10px;
+	position:relative;
+	font-weight:bold;
+}
+.same-text  h3:after{
+	content:'';
+	background:#ff523b;
+	width:130px;
+	height: 3px;
+	border-radius:5px;
+	position:absolute;
+	bottom: -4px;
+	left: 45%;
+	transform:translateX(-50%);
+}
+.same-text p{
+	font-size:14px;
+    padding-top: 10px;
+	margin-bottom:60px;
+}
+/*-------------------Company Service CSS------------------*/
+.cmpany-service{
+	width:100%;
+	height:auto;
+}
+.servicediv{
+	display:inline-flex;
+	height:170px;
+	
+}
+.servicediv img{
+	width: 110px;
+	height: 110px;
+	border-radius:50%;
+}
+.workdiv {
+    margin-left: 20px;
+}
+.workdiv h4{
+	font-size:18px;
+}
+.workdiv p{
+	font-size:12px;
+	width: 250px;
+}
+.header-buttons a {
+    border: 1px solid #ff523b;
+    margin: 0 5px;
+    padding: 0px 5px;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    background: #ff5232;
+	transition:background 1s;
+
+	
+}
+.header-buttons a:hover{
+	color:#000;
+	background:#fff;
+}
+/*-------------------About us CSS------------------*/
+.about-div{
+	width:100%;
+	height:auto;
+	background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('img/virtual-work-team-fsl.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	transform: skew(0deg, -5deg) translateY(20px);
+}
+.about-text, .counter-sec, .Fromup, .about-text-2, .about-text-4, .about-text-3, .about-text-5{
+	padding:70px 0;
+	transform: skew(0deg, 5deg);
+	color:#fff;
+}
+.about-text h2{
+	font-size:25px;
+	position:relative;
+
+	
+}
+.about-text h2:after{
+	content:'';
+	background:#ff523b;
+	width: 170px;
+	height: 1px;
+	border-radius:5px;
+	position:absolute;
+	bottom: -10px;
+	left: 13%;
+	transform:translateX(-50%);
+}
+.about-text h5{
+	font-size:15px;
+	margin:40px 0;
+	font-weight: 300;
+}
+.about-text {
+	font-size:12px;
+}
+.about-text p {
+	font-size:12px;
+	font-weight: 200;
+}
+.counter-sec{
+	text-align:center;
+	margin-top: 30px;
+}
+.counter-sec h2{
+	font-size:25px;
+}
+.counter-sec p{
+	font-size:12px;
+}
+.counter-addjust{
+	margin-bottom:20px;
+}
+/*-------------------We Are Diffents CSS------------------*/
+.diffentDiv{
+	width:100%;
+	height:auto;
+	margin-bottom:50px;
+}
+.titelhedding{
+	font-size: 20px;
+	margin-bottom: 75px;
+	font-weight: 700;
+	position:relative;
+	margin-top: 40px;
+}
+.titelhedding:after{
+    content:'';
+    background:#ff523b;
+    width: 170px;
+    height: 2px;
+    border-radius:5px;
+    position:absolute;
+    bottom: -10px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+h2.counts {
+    font-size: 40px;
+    color: #ccc9c9c4;
+}
+/*-------------------We Are Differents-----------------*/
+
+.deffernt-option h3{
+	font-size:25px;
+}
+.all-set h3{
+	font-size:15px;
+	font-weight:bold;
+}
+.all-set p{
+	font-size:11px;
+}
+/*-------------------brands logo-----------------*/
+section.brands, .teamPic {
+    width: 100%;
+    height: auto;
+    background: #35610314;
+	margin-bottom:40px;
+}
+.box img {
+    height: 80px;
+    width: 220px;
+    margin: 40px 0;
+
+}
+/*-------------------Contact Us-----------------*/
+.contact-div{
+	width:100%;
+	height:auto;
+	background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('img/images (4).jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	transform: skew(0deg, -5deg) translateY(20px);
+}
+.about-text-2 h2{
+	font-size:25px;
+	position:relative;
+
+	
+}
+.about-text-2 h2:after{
+	content:'';
+	background:#ff523b;
+	width: 170px;
+	height: 1px;
+	border-radius:5px;
+	position:absolute;
+	bottom: -10px;
+	left: 16%;
+	transform:translateX(-50%);
+}
+.about-text-2 h5{
+	font-size:15px;
+	margin:40px 0;
+	font-weight:200;
+
+}
+.about-text-2 {
+	font-size:12px;
+}
+.about-text-2 p {
+	font-size:12px;
+	font-weight: 200;
+}
+.Fromup{
+	margin-top:80px;
+}
+.btn{
+    background:red;
+	border:1px solid red;
+	transition:background 1s;
+}
+/*-------------------Tram-----------------*/
+section.teamwork {
+    width: 100%;
+    height: auto;
+    margin: 60px 0px;
+}
+.workdiv2 p {
+    font-size: 13px;
+    width: 325px;
+}
+
+.workdiv2 h5 {
+    font-size: 15px;
+}
+
+.workdiv2 h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+/*-------------------Trampic-----------------*/
+section.teamPic {
+    width: 100%;
+    height: auto;
+    background: #35610314;
+	margin-bottom:40px;
+}
+.teamPic .box img {
+    height: 100px;
+    width: 100px;
+	border-radius:50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.teamPic .box h4{
+	font-size:14px;
+	text-align: center;
+}
+.teamPic .box h5{
+	font-size:12px;
+	text-align: center;
+}
+/*************Footer CSS ************/
+.footerdiv{
+	width:100%;
+	height:auto;
+	background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('img/p.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	transform: skew(0deg, -5deg) translateY(20px);
+}
+.about-text-4 h2{
+	font-size:25px;
+	position:relative;
+
+	
+}
+.about-text-4 h2:after{
+	content:'';
+	background:#ff523b;
+	width: 170px;
+	height: 1px;
+	border-radius:5px;
+	position:absolute;
+	bottom: -10px;
+	left: 26%;
+	transform:translateX(-50%);
+}
+.about-text-4 h5{
+	font-size:15px;
+	margin:40px 0;
+}
+.about-text-4 {
+	font-size:12px;
+}
+.about-text-4 p {
+	font-size:12px;
+	font-weight: 200;
+}
+.about-text-3{
+}
+
+.about-text-3 .fas, .about-text-5 .fas{
+	color:red;
+	font-size:35px;
+	margin-bottom: 5px;
+}
+.about-text-3 h2, .about-text-5 h2{
+	font-size:15px;
+}
+.about-text-3 .level{
+	text-align:center;
+	margin-bottom:15px;
+} 
+.about-text-5 .level{
+	text-align:center;
+	margin-bottom:35px;
+}
+.about-text-3 p, .about-text-5 p{
+	font-size:12px;
+}
+.copyright{
+	position:relative;
+	z-index:1;
+	width:100%;
+}
+.copyright p{
+	font-size:12px;
+}
+
+.copyright{
+	position:absolute;
+    z-index:0;
+	background:black;
+    color:#fff;	
+	margin-top: -39px;
+    height: 125px;
+}
+#mtBtn{
+	/*display:none;*/
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	z-index:99;
+	border:none;
+	color:#fff;
+	background:Green;
+	padding:10px;
+	border-radius:10px;
+	
+}
+/*========Media queries==========*/
+@media(max-width:768px){
+.nav-item{
+		text-align:center!important;
+	}
+.servicediv img{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+}
+.workdiv {
+    margin-left: 15px;
+}
+.workdiv h4{
+	font-size:16px;
+}
+.workdiv p{
+	font-size:12px;
+	width: 230px;
+}
+.about-text h2:after{
+	transform:translateX(-20%);
+}
+.counter-addjust{
+	margin-bottom:50px;
+}
+.about-text-2 h2:after{
+	transform:translateX(-30%);
+}
+.about-text-4 h2:after{
+	transform:translateX(-40%);
+}
+.about-text-3 p{
+	font-size:10px;
+}
+}
+@media(max-width:600px){
+	
+.title-phone h1{
+	color:#fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+h1.Change-hobe {
+    font-weight: 300;
+}
+.title-phone h2{
+	color:#fff;
+	font-size:20px;
+}
+.phone-call{text-align:center;
+    border: 1px solid #fff;
+    padding: 10px 0;
+	margin-top:10px;
+}
+.same-text  h3 {
+	font-size:20px;
+	font-weight:bold;
+}
+.same-text  h3:after{
+	width:100px;
+	height: 2px;
+}
+.same-text p{
+	font-size:12px;
+}
+.servicediv{
+	justify-content:center;
+}
+.servicediv img{
+	width: 90px;
+	height: 90px;
+	border-radius:50%;
+}
+.workdiv {
+    margin-left: 15px;
+}
+.workdiv h4{
+	font-size:15px;
+}
+.workdiv p{
+	font-size:10px;
+	width: 220px;
+}
+.about-text h2{
+	font-size:22px;
+	text-align:center;
+}
+.about-text h2:after{
+	width: 150px;
+	transform:translateX(-10%);
+}
+.about-text h5{
+	font-size:14px;
+	margin:30px 0;
+}
+.counter-sec{
+	text-align:center;
+	display: inline-flex;
+	margin-top: -80px;
+	justify-content: center;
+}
+.counter-addjust{
+	padding:0 14px;
+}
+.about-text-2 h2:after{
+	width: 150px;
+	transform:translateX(-35%);
+}
+.Fromup{
+	margin-top:-80px;
+}
+.btn{
+    background:red;
+	border:1px solid red;
+	transition:background 1s;
+	width: 100px;
+    font-size: 12px;
+}
+.workdiv2 p {
+    font-size: 12px;
+}
+
+.workdiv2 h5 {
+    font-size: 14px;
+}
+
+.workdiv2 h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.titelhedding:after{
+    width: 120px;
+    transform:translateX(-50%);
+}
+.about-text-4 h2:after{
+	width: 140px;
+	height: 1px;
+	left: 20%;
+}
+.about-text-4 h5{
+	font-size:15px;
+	margin:40px 0;
+	font-weight:200;
+}
+.about-text-4 {
+	font-size:12px;
+}
+.about-text-4 p {
+	font-size:12px;
+	font-weight:200;
+}
+.about-text-3{
+	margin-top:-100px;
+}
+.about-text-5{
+	margin-top:-230px;
+}
+.about-text-3 .level{
+	margin-bottom:35px;
+} 
+.about-text-5 .level{
+	margin-bottom:35px;
+}
+.copyright{
+	position:relative;
+	z-index:1;
+	width:100%;
+}
+.copyright p{
+	font-size:8px;
+}
+.copyright{
+	position:absolute;
+    z-index:0;
+	background:black;
+    color:#fff;	
+	margin-top: -39px;
+    height: 125px;
+}
+	
+}
